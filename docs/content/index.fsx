@@ -4,8 +4,8 @@
 #I "../../bin"
 
 (**
-F# Project Scaffold
-===================
+Stuff.ThatWorks - Email validator
+=================================
 
 Documentation
 
@@ -14,7 +14,7 @@ Documentation
   <div class="span6">
     <div class="well well-small" id="nuget">
       The F# ProjectTemplate library can be <a href="https://nuget.org/packages/FSharp.ProjectTemplate">installed from NuGet</a>:
-      <pre>PM> Install-Package FSharp.ProjectTemplate</pre>
+      <pre>PM> Install-Package Stuff.EmailValidator</pre>
     </div>
   </div>
   <div class="span1"></div>

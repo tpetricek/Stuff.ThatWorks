@@ -4,16 +4,31 @@
 #I "../../bin"
 
 (**
-Introducing your project
-========================
+F# Email Validator
+==================
 
-Say more
+Getting started
+---------------
 
+This is how you reference the library:
 *)
 #r "Stuff.EmailValidator.dll"
-open FSharp.ProjectTemplate
-
-Library.hello 0
+open Stuff.EmailValidator
 (**
-Some more info
+
+Doing something silly
+---------------------
+
+Create basic requirements:
 *)
+let reqs = 
+  [ Requirements.DigitRequirement
+    Requirements.LengthRequirement ]
+(**
+Let's **run this**!!
+*)
+let p = PowerValidator(reqs)
+p.IsValid "Hello1" // fails
+p.IsValid "Hello144" // works
+
+

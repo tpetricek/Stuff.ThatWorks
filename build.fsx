@@ -21,33 +21,33 @@ open System
 
 // The name of the project 
 // (used by attributes in AssemblyInfo, name of a NuGet package and directory in 'src')
-let project = "FSharp.ProjectTemplate"
+let project = "Stuff.EmailValidator"
 
 // Short summary of the project
 // (used as description in AssemblyInfo and as a short summary for NuGet package)
-let summary = "A short summary of your project."
+let summary = "Stuff that works demo - email validator."
 
 // Longer description of the project
 // (used as a description for NuGet package; line breaks are automatically cleaned up)
 let description = """
-  A lengthy description of your project. 
-  This can have multiple lines and will be cleaned up. """
+  Stuff that works demo - email validator
+  This is completely silly project btw."""
 // List of author names (for NuGet package)
-let authors = [ "Your Name" ]
+let authors = [ "Tomas Petricek" ]
 // Tags for your project (for NuGet package)
-let tags = "F# fsharp tags which describe your project"
+let tags = "demo"
 
 // File system information 
 // (<solutionFile>.sln is built during the building process)
-let solutionFile  = "FSharp.ProjectScaffold"
+let solutionFile  = "Stuff.EmailValidator"
 // Pattern specifying assemblies to be tested using NUnit
 let testAssemblies = "tests/**/bin/Release/*Tests*.dll"
 
 // Git configuration (used for publishing documentation in gh-pages branch)
 // The profile where the project is posted 
-let gitHome = "https://github.com/fsprojects"
+let gitHome = "https://github.com/tpetricek"
 // The name of the project on GitHub
-let gitName = "FSharp.ProjectScaffold"
+let gitName = "Stuff.ThatWorks"
 
 // --------------------------------------------------------------------------------------
 // END TODO: The rest of the file includes standard build steps 

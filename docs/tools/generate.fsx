@@ -4,19 +4,19 @@
 // --------------------------------------------------------------------------------------
 
 // Binaries that have XML documentation (in a corresponding generated XML file)
-let referenceBinaries = [ "FSharp.ProjectTemplate.dll" ]
+let referenceBinaries = [ "Stuff.EmailValidator.dll" ]
 // Web site location for the generated documentation
-let website = "/FSharp.ProjectScaffold"
+let website = "/Stuff.ThatWorks"
 
-let githubLink = "http://github.com/fsprojects/FSharp.ProjectScaffold"
+let githubLink = "http://github.com/tpetricek/Stuff.ThatWorks"
 
 // Specify more information about your project
 let info =
-  [ "project-name", "FSharp.ProjectScaffold"
-    "project-author", "Your Name"
-    "project-summary", "A short summary of your project"
+  [ "project-name", "Stuff.ThatWorks"
+    "project-author", "Tomas Petricek"
+    "project-summary", "Demo project - simple email validator"
     "project-github", githubLink
-    "project-nuget", "http://nuget.com/packages/FSharp.ProjectScaffold" ]
+    "project-nuget", "http://nuget.com/packages/Stuff.EmailValidator" ]
 
 // --------------------------------------------------------------------------------------
 // For typical project, no changes are needed below
