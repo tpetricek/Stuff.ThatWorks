@@ -23,6 +23,7 @@ let ``When password contains a digit, DigitRequirement should be satisfied`` () 
   // Assert.AreEqual(true, actual)
   actual |> should equal true
 
+(*
 [<Test>]
 let ``DigitRequirement requires that there is a digit`` () =
   Check.Quick(fun (s:string) -> 
@@ -30,6 +31,7 @@ let ``DigitRequirement requires that there is a digit`` () =
     if s <> null then
       let expected = Seq.exists Char.IsDigit s
       req.IsSatisfied(s) |> should equal expected )
+*)
 
 [<Test>]
 let ``When any requirement is not satisfied, the password should be invalid`` () =
@@ -51,4 +53,4 @@ let ``Requirement checker should be called with the password`` () =
   let validator = PowerValidator([requirement])
   validator.IsValid("test1") |> ignore
   validator.IsValid("test2") |> ignore
-  spy.Calls |> should equal [ "tes1"; "test2" ]
+  spy.Calls |> should equal [ "test1"; "test2" ]
